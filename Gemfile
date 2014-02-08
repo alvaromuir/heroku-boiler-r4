@@ -29,6 +29,7 @@ end
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 gem 'unicorn'
+gem 'devise'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development

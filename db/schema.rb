@@ -11,10 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140208223317) do
+ActiveRecord::Schema.define(version: 20140209013456) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "hstore"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -31,6 +32,10 @@ ActiveRecord::Schema.define(version: 20140208223317) do
     t.datetime "updated_at"
     t.string   "first_name"
     t.string   "last_name"
+    t.string   "uid"
+    t.string   "provider"
+    t.string   "avatar"
+    t.hstore   "oauth_cred"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

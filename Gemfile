@@ -31,6 +31,16 @@ end
 gem 'unicorn'
 gem 'devise'
 
+gem 'omniauth-facebook', '~> 1.5.1'
+gem 'omniauth-twitter', '~> 1.0.1'
+gem 'omniauth-linkedin', '~> 0.1.0'
+gem 'omniauth-google-oauth2', '~> 0.2.2'
+gem 'omniauth-yahoo', '~> 0.0.4'
+gem 'omniauth-windowslive', '~> 0.0.8.1'
+gem 'omniauth-github', '~> 1.1.1'
+gem 'omniauth-meetup', '~> 0.0.7'
+gem 'omniauth-dropbox', '~> 0.2.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
